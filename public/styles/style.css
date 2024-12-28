@@ -1,0 +1,114 @@
+p {
+  font-family: "Roboto", serif;
+}
+
+h1 {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+}
+h2 {
+  font-family: "Tangerine", serif;
+  font-weight: bold;
+}
+
+.nav-bar-item:hover {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.nav-link-item:hover{
+  color: white;
+}
+
+.nav-link-item {
+  color: black;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+}
+
+.header-box {
+  border-style: solid;
+  border-width: 0.5px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+.welcomeTitle {
+  background-image: url(../images/titleBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  height: 700px;
+  margin-bottom: 60px;
+}
+
+.footerBox {
+  height: 200px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.footerLogo {
+  height: 35px;
+}
+
+.footerCopyright {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  color: black;
+  font-size: 15px;
+}
+
+.textArea {
+  height: 500px;
+  border-color: black;
+}
+
+.titleArea {
+  border-color: black;
+}
+
+.profile {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.aboutMeText {
+  text-align: center;
+  font-size: 100px;
+}
+.aboutMeP {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* chatGptCode */
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Ensures full height for the body */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Makes body at least the viewport height */
+}
+
+main {
+  flex: 1; /* Pushes the footer to the bottom when content is short */
+}
+
+
+.footerBox {
+  flex-wrap: wrap;
+}
+/* chatGptCode */
+

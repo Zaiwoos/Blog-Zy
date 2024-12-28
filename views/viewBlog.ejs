@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+<main>
+  <div class="container d-flex justify-content-center">
+    <div class="row">
+      <% blogs.forEach(function(blog, index) { %>
+        <div class="col-md-12">
+          <h2><%= blog.title %></h2>
+          <p><%= blog.context %></p>
+          <a href="/delete/<%= index %>" class="btn btn-outline-danger">Delete</a>
+          <hr>
+        </div>
+      <% }); %>
+      <div class="col-md-12">
+        <h2>Your title Goes here</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus non sem dapibus tincidunt. Sed id interdum neque. Donec non arcu et velit convallis sodales. Maecenas ac neque libero. Vivamus eu mollis diam. Nunc sed fringilla leo. Donec dignissim, urna et ornare accumsan, erat arcu varius ligula, id porttitor ipsum magna vitae justo. Nam at massa ullamcorper, iaculis orci pellentesque, finibus odio. Donec quam felis, eleifend sed maximus at, pretium a ipsum.</p>
+        <hr>
+      </div>
+      <div class="col-12">
+        <h2>Your title Goes here</h2>
+        <p>aslkdjalskdlkas</p>
+        <hr>
+      </div>
+      <div class="col-12">
+        <h2>Your title Goes here</h2>
+        <p>aslkdjalskdlkas</p>
+        <hr>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%- include("partials/footer.ejs") %>

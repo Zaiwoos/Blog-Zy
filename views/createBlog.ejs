@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+  <div class="container">
+    <div class="row">
+      <form action="/submit" method="POST">
+      <div class="col-sm-12 col-md-4 pb-3">
+        <div class="input-group mb-3 pt-5">
+          <input type="text" class="form-control titleArea" placeholder="Your title Blog Post" aria-label="Recipient's username" aria-describedby="button-addon2" name="postTitle" required>
+          <input type="submit" class="btn btn-outline-secondary" value="Post">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label" >Your blog here</label>
+          <textarea class="form-control textArea" id="exampleFormControlTextarea1" rows="3" name="blogContext"></textarea>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</main>
+
+<%- include("partials/footer.ejs") %>
